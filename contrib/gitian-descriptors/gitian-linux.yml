@@ -1,5 +1,5 @@
 ---
-name: "merelcoin-linux-0.17"
+name: "merelcoin-linux-0.01"
 enable_cache: true
 suites:
 - "bionic"
@@ -28,7 +28,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/merelcoin-project/merelcoin.git"
+- "url": "https://github.com/merelcoin/merelcoin.git"
   "dir": "merelcoin"
 files: []
 script: |
