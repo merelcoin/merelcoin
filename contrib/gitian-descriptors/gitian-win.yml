@@ -1,5 +1,5 @@
 ---
-name: "merelcoin-win-0.17"
+name: "merelcoin-win-0.01"
 enable_cache: true
 suites:
 - "bionic"
@@ -23,7 +23,7 @@ packages:
 - "python"
 - "rename"
 remotes:
-- "url": "https://github.com/merelcoin-project/merelcoin.git"
+- "url": "https://github.com/merelcoin/merelcoin.git"
   "dir": "merelcoin"
 files: []
 script: |
