@@ -23,13 +23,13 @@ def setup():
         programs += ['lxc', 'debootstrap']
     subprocess.check_call(['sudo', 'apt-get', 'install', '-qq'] + programs)
     if not os.path.isdir('gitian.sigs.ltc'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/merelcoin-project/gitian.sigs.ltc.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/merelcoin/gitian.sigs.ltc.git'])
     if not os.path.isdir('merelcoin-detached-sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/merelcoin-project/merelcoin-detached-sigs.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/merelcoin/merelcoin-detached-sigs.git'])
     if not os.path.isdir('gitian-builder'):
         subprocess.check_call(['git', 'clone', 'https://github.com/devrandom/gitian-builder.git'])
     if not os.path.isdir('merelcoin'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/merelcoin-project/merelcoin.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/merelcoin/merelcoin.git'])
     os.chdir('gitian-builder')
     make_image_prog = ['bin/make-base-vm', '--suite', 'bionic', '--arch', 'amd64']
     if args.docker:
